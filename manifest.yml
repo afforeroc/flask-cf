@@ -1,0 +1,5 @@
+---
+applications:
+- name: sample-flask-cf
+  memory: 64M
+  buildpack: https://github.com/cloudfoundry/python-buildpack
