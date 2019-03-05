@@ -40,7 +40,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
 ```
 * Corre la aplicación: `$ python app.py`
-> AAbre una pestaña en tu navegador web en: http://localhost:3000/
+> Abre una pestaña en tu navegador web en: http://localhost:3000/
 * Detén la aplicación: `(Ctrl + C)`
 
 ### 3. Configurar la aplicación para el despliegue
