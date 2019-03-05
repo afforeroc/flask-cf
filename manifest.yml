@@ -1,5 +1,4 @@
 ---
 applications:
-- name: sample-flask-cf
+- name: flask-cf-<initials>-<date>
   memory: 64M
-  buildpack: https://github.com/cloudfoundry/python-buildpack
