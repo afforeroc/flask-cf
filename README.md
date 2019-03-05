@@ -40,12 +40,12 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port)
 ```
 * Corre la aplicación: `$ python app.py`
-> Abre tu navegador web en `localhost:3000/`
+> Abre tu navegador web en `localhost:3000`
 * Detén la aplicación: `(Ctrl + C)`
 
 ### 3. Configurar la aplicación para el despliegue
 Desde la carpeta raíz de la aplicación
-* Crea el archivo `Procfile` y editalo con la siguiente información:
+* Crea el archivo sin extensión `Procfile` y editalo con la siguiente información:
 ```
 web: python app.py
 ```
