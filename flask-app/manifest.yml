@@ -1,4 +1,4 @@
 ---
 applications:
-- name: flask-cf-<initials>-<date>
+- name: flask-app-<initials>-<date>
   memory: 64M
