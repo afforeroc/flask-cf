@@ -16,8 +16,8 @@ Este tutorial te indicará como configurar una aplicación web de `Flask` para d
 * Verifica la instalación de Flask: `$ flask --version`
 
 ### 2. Crear y probar la aplicación web
-* Crea la carpeta: `flask-cf\`
-* Accede a la carpeta creada: `$ cd flask-cf`
+* Crea la carpeta: `flask-app\`
+* Accede a la carpeta creada: `$ cd flask-app`
 * Desde la carpeta, crea el archivo `app.py` y editalo con lo siguiente información:
 ```
 # import dependencies
@@ -57,7 +57,7 @@ Flask>=0.12
 ```
 ---
 applications:
-- name: flask-cf-<initials>-<date>
+- name: flask-app-<initials>-<date>
   memory: 64M
 ```
 
