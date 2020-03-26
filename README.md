@@ -1,4 +1,4 @@
-# Create and configure an Flask app to deploy on Cloud Foundry
+# Create and configure a Flask app to deploy on Cloud Foundry
 This repository belongs to tutorial set: [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).<br> 
 Additional, contains a web app sample for study and use.<br>
 
