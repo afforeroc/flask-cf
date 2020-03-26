@@ -1,8 +1,9 @@
 # Create and configure an Flask app to deploy on Cloud Foundry
-This repository belongs to [tutorial set](https://github.com/afforeroc/deploy-on-cloudfoundry) about how to create and configure a web app to deploy on cloud. Additional, contains a web app sample for study and use.
-> If you want to ...
->  * **run app sample locally**- review steps 1 and 2.
->  * **deploy app sample on cloud**- review step 3.
+This repository belongs to [tutorial set](https://github.com/afforeroc/deploy-on-cloudfoundry) about how to create and configure a web app to deploy on cloud. Additional, contains a web app sample for study and use.<br>
+
+If you want to ...
+>  * **Run app sample locally**- review steps 1 and 2.
+>  * **Deploy app sample on cloud**- review step 3.
 
 ## Tutorial
 This tutorial was designed to be done on a personal computer. Most every steps require using of console commands except when is indicated.
@@ -14,7 +15,7 @@ This tutorial was designed to be done on a personal computer. Most every steps r
 ### 1. Install Python and Flask
   **1.1** Install stable/latest version of [Python](https://www.python.org/downloads/).
   
-  **1.2.1** Verify Python installation.
+  **1.2** Verify Python installation.
   ```
   python --version
   ```
@@ -96,10 +97,10 @@ This tutorial was designed to be done on a personal computer. Most every steps r
   **3.4** Edit `manifest.yml` file changing the value of `- name` attribute. The name that should be **unique** because this will used as part of an **URL** where your app will deployed.You can use previous template putting your initials and today's date.
 
 ## Reference links
-* Simple Python Flask app on Cloud Foundry- https://gist.github.com/ihuston/e87c1d4719f7e72e9760
-* CF Sample App Python- https://github.com/swisscom/cf-sample-app-python
+* [Simple Python Flask app on Cloud Foundry](https://gist.github.com/ihuston/e87c1d4719f7e72e9760)
+* [CF Sample App Python](https://github.com/swisscom/cf-sample-app-python)
 
-## Links de interés
-* Flask Documentation- http://flask.pocoo.org/
-* Cloud Foundry Documentation- https://docs.cloudfoundry.org/ 
-* Deploying with App Manifests- https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
+## Information links
+* [Flask Documentation](http://flask.pocoo.org/)
+* [Cloud Foundry Documentation](https://docs.cloudfoundry.org/) 
+* [Deploying with App Manifests](https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html)
