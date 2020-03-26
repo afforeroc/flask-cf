@@ -1,74 +1,105 @@
-# Configurar una aplicación web de Flask para desplegarla en Cloud Foundry
+# Create and configure an Flask app to deploy on Cloud Foundry
+This repository belongs to [tutorial set](https://github.com/afforeroc/deploy-on-cloudfoundry) about how to create and configure a web app to deploy on cloud. Additional, contains a web app sample for study and use.
+> If you want to ...
+>  * **run app sample locally**- review steps 1 and 2.
+>  * **deploy app sample on cloud**- review step 3.
 
-Este tutorial te indicará como configurar una aplicación web de `Flask` para desplegarla en Cloud Foundry.
+## Tutorial
+This tutorial was designed to be done on a personal computer. Most every steps require using of console commands except when is indicated.
 
-* Nota: Al descargar este repositorio, la aplicación tendrá los archivos de configuración para el despliegue, pero es necesario que realices el paso 4.
+### 0. Required software
+* Command prompt like Terminal, PowerShell, etc.
+* Text editor like Notepad++, Visual Studio Code, etc.
 
-## Requisitos básicos
-* Ventana de comandos como `Terminal` o `PowerShell`
-* Editor de texto/código como `Notepad++` o `Visual Studio Code`
+### 1. Install Python and Flask
+  **1.1** Install stable/latest version of [Python](https://www.python.org/downloads/).
+  
+  **1.2.1** Verify Python installation.
+  ```
+  python --version
+  ```
+  ```
+  pip --version
+  ```
 
-### 1. Instalar Python y Flask
-* Instala la última versión de [Python](https://www.python.org/downloads/)
-* Verifica la instalación de Python: `$ python --version`
-* Verifica la instalación de PIP: `$ pip --version`
-* Instala Flask: `$ pip install Flask>=0.12`
-* Verifica la instalación de Flask: `$ flask --version`
+  **1.3** Install and verify the framework.
+  ```
+  pip install Flask>=0.12
+  ```
+  ```
+  flask --version
+  ```
 
-### 2. Crear y probar la aplicación web
-* Crea la carpeta: `flask-app\`
-* Accede a la carpeta creada: `$ cd flask-app`
-* Desde la carpeta, crea el archivo `app.py` y editalo con lo siguiente información:
-```
-# import dependencies
-import os
-from flask import Flask
+  > If you can't see the framework version on Windows, launch a PowerShell window as an administrator and enter this following command. Later, try again to verify.
+  ```
+  Set-ExecutionPolicy Unrestricted
+  ```
 
-# bootstrap the app
-app = Flask(__name__)
+### 2. Create and run the app
+  **2.1** Create root folder `flask-app\` and go to inside.
 
-# set the port dynamically with a default of 3000 for local development
-port = int(os.getenv('PORT', '3000'))
+  **2.2** Create `app.py` and edit it with following template.
+  > Text<br> 
+  ```
+  # import dependencies
+  import os
+  from flask import Flask
 
-# our base route which just returns a string
-@app.route('/')
-def hello_world():
-    return 'Congratulations! Welcome to the Swisscom Application Cloud.'
+  # bootstrap the app
+  app = Flask(__name__)
 
-# start the app
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=port)
-```
-* Corre la aplicación: `$ python app.py`
-> Abre tu navegador web en `localhost:3000`
-* Detén la aplicación: `(Ctrl + C)`
+  # set the port dynamically with a default of 3000 for local development
+  port = int(os.getenv('PORT', '3000'))
 
-### 3. Configurar la aplicación para el despliegue
-Desde la carpeta raíz de la aplicación
-* Crea el archivo sin extensión `Procfile` y editalo con la siguiente información:
-```
-web: python app.py
-```
-* Crea el archivo `requeriments.txt` y editalo con la siguiente información:
-```
-Flask>=0.12
-```
-* Crea el archivo `manifest.yml` y editalo con la siguiente información:
-```
----
-applications:
-- name: flask-app-<initials>-<date>
-  memory: 64M
-```
+  # our base route which just returns a string
+  @app.route('/')
+  def hello_world():
+      return 'Congratulations! Welcome to the Swisscom Application Cloud.'
 
-### 4. Colocar un nombre a la aplicación
-* Dentro del archivo `manifest.yml`, cambia el valor del atributo `- name` colocando un nombre **único**. Puedes usar la plantilla para colocar tus iniciales y la fecha de hoy.
+  # start the app
+  if __name__ == '__main__':
+      app.run(host='0.0.0.0', port=port)
+  ```
 
-## Links de referencia
-* Simple Python Flask app on Cloud Foundry: https://gist.github.com/ihuston/e87c1d4719f7e72e9760
-* CF Sample App Python: https://github.com/swisscom/cf-sample-app-python
+  **2.3** Run the app. Later, open your favorite web browser on `localhost:3000`.
+  > Remember give access to Python to use the local network
+  ```
+  python app.py
+  ```
+
+  **2.4** Stop the app with <kbd>ctrl</kbd> + <kbd>C</kbd>.
+
+### 3. Configure the app to deploy
+  Go to root folder and ...
+
+  **3.1** Create `Procfile` file and edit it with following template.
+  >Text
+  ```
+  web: python app.py
+  ```
+
+  **3.2** Create `requeriments.txt` file and edit it with following template.
+  >Text
+  ```
+  Flask>=0.12
+  ```
+
+  **3.3** Create `manifest.yml` file and edit it with following template.
+  > Text
+  ```
+  ---
+  applications:
+  - name: flask-app-<initials>-<date>
+    memory: 64M
+  ```
+
+  **3.4** Edit `manifest.yml` file changing the value of `- name` attribute. The name that should be **unique** because this will used as part of an **URL** where your app will deployed.You can use previous template putting your initials and today's date.
+
+## Reference links
+* Simple Python Flask app on Cloud Foundry- https://gist.github.com/ihuston/e87c1d4719f7e72e9760
+* CF Sample App Python- https://github.com/swisscom/cf-sample-app-python
 
 ## Links de interés
-* Documentación de Flask: http://flask.pocoo.org/
-* Documentación de Cloud Foundry: https://docs.cloudfoundry.org/ 
-* Documentación sobre manifest.yml: https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
+* Flask Documentation- http://flask.pocoo.org/
+* Cloud Foundry Documentation- https://docs.cloudfoundry.org/ 
+* Deploying with App Manifests- https://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html
