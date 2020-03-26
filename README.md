@@ -2,8 +2,8 @@
 This repository belongs to [tutorial set](https://github.com/afforeroc/deploy-on-cloudfoundry) about how to create and configure a web app to deploy on cloud. Additional, contains a web app sample for study and use.<br>
 
 If you want to ...
->  * **Run app sample locally**- review steps 1 and 2.
->  * **Deploy app sample on cloud**- review step 3.
+  * **Run app sample locally**- review steps 1 and 2.
+  * **Deploy app sample on cloud**- review step 3.
 
 ## Tutorial
 This tutorial was designed to be done on a personal computer. Most every steps require using of console commands except when is indicated.
