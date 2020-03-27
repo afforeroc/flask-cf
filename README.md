@@ -1,5 +1,5 @@
 # Create and configure a Flask app to deploy on Cloud Foundry
-This is a tutorial about how to learn create and configure a simple web app to deploy on cloud, with Cloud Foundry service. Additional, it contains a web app sample for study and use.
+This is a tutorial about how to create and configure a simple web app to deploy on cloud, with Cloud Foundry service. Additional, it contains a web app sample for study and use.
 
 ## Tutorial
 This tutorial was designed to be done on a personal computer. <br> 
@@ -93,7 +93,7 @@ applications:
   memory: 64M
 ```
 
-3.4 The web app is configurated. Now, you can go to repository [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry) to learn how to deploy on Cloud.
+3.4 The web app is configurated. Now, you can lear how to[Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).
 
 ## Reference links
 * [Simple Python Flask app on Cloud Foundry](https://gist.github.com/ihuston/e87c1d4719f7e72e9760)
