@@ -62,6 +62,11 @@ if __name__ == '__main__':
   app.run(host='0.0.0.0', port=port)
 ```
 
+>If you downloaded the web app sample, please install requeriments.
+```
+pip install -r requirements.txt
+```
+
 2.3 Run the app locally and later, open your favorite web browser on `localhost:3000`.
 > Remember give access to Python to use the local network
 ```
