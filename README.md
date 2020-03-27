@@ -84,7 +84,7 @@ web: python app.py
 Flask>=0.12
 ```
 
-3.3 Create `manifest.yml` file and edit it with following template. You should change `name` attribute and their value should be **unique** because it will used as part of an **URL** where your app will deployed. For example, you can put your initials and today's date.
+3.3 Create `manifest.yml` file and edit it with following template. It is necessary change of value of `name` attribute and this should be **unique** because it will used as part of an **URL** where your app will deployed. For example, you can put your initials and today's date.
 > Text
 ```
 ---
@@ -93,7 +93,7 @@ applications:
   memory: 64M
 ```
 
-3.4 The web app is configurated. Now, you can lear how to[Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).
+3.4 The web app is configurated. Now, you can lear how to [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).
 
 ## Reference links
 * [Simple Python Flask app on Cloud Foundry](https://gist.github.com/ihuston/e87c1d4719f7e72e9760)
