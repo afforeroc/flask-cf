@@ -1,6 +1,5 @@
 # Create and configure a Flask app to deploy on Cloud Foundry
-This repository belongs to tutorial set: [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).<br> 
-Additional, contains a web app sample for study and use.
+This is a tutorial about how to learn create and configure a simple web app to deploy on cloud, with Cloud Foundry service. Additional, it contains a web app sample for study and use.
 
 ## Tutorial
 This tutorial was designed to be done on a personal computer. <br> 
@@ -11,7 +10,7 @@ Most every steps require using of console commands except when is indicated.
 * Text editor like Notepad++, Visual Studio Code, etc.
 
 ### 1. Install Python and Flask
-> On Linux use `python3`/`pip3` instead of `python`/`pip`
+> On Linux, use `python3`/`pip3` instead of `python`/`pip`
 
 1.1 Install stable/latest version of [Python](https://www.python.org/downloads/).
 
@@ -37,9 +36,9 @@ Set-ExecutionPolicy Unrestricted
 ```
 
 ### 2. Create and run the app
-2.1 Create root folder: `flask-app\` and go inside.
+2.1 Create a root folder of app named `flask-app\` and go inside.
 
-2.2 Create `app.py` and edit it with following template.
+2.2 Create `app.py` file and edit it with following template.
 > Text<br> 
 ```
 # import dependencies
@@ -71,7 +70,7 @@ python app.py
 2.4 Stop the app with <kbd>ctrl</kbd> + <kbd>C</kbd>.
 
 ### 3. Configure the app to deploy
-Go to root folder `flask-app\`
+Go to `flask-app\` folder
 
 3.1 Create `Procfile` file and edit it with following template.
 >Text
@@ -94,7 +93,7 @@ applications:
   memory: 64M
 ```
 
-3.4 The web app is configurated. Now, you can go to repository: [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry) to learn how to deploy on Cloud.
+3.4 The web app is configurated. Now, you can go to repository [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry) to learn how to deploy on Cloud.
 
 ## Reference links
 * [Simple Python Flask app on Cloud Foundry](https://gist.github.com/ihuston/e87c1d4719f7e72e9760)
