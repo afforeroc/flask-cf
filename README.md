@@ -1,16 +1,17 @@
 # Create and configure a Flask app to deploy on Cloud Foundry
-This is a tutorial about how to create and configure a simple web app to deploy on cloud, with Cloud Foundry service. Additional, it contains a web app sample for study and use.
+This is a tutorial about how to create and configure a simple web app to deploy on cloud using Cloud Foundry service.<br>
+Additional, it contains a web app sample for study and use.
 
 ## Tutorial
 This tutorial was designed to be done on a personal computer. <br> 
 Most every steps require using of console commands except when is indicated.
 
-### 0. Required software
+### Required software
 * Command prompt like Terminal, PowerShell, etc.
 * Text editor like Notepad++, Visual Studio Code, etc.
 
 ### 1. Install Python and Flask
-> On Linux, use `python3`/`pip3` instead of `python`/`pip`
+> On Linux, please use `python3`/`pip3` instead of `python`/`pip`
 
 1.1 Install stable/latest version of [Python](https://www.python.org/downloads/).
 
@@ -61,7 +62,7 @@ if __name__ == '__main__':
   app.run(host='0.0.0.0', port=port)
 ```
 
-2.3 Run the app locally. Later, open your favorite web browser on `localhost:3000`.
+2.3 Run the app locally and later, open your favorite web browser on `localhost:3000`.
 > Remember give access to Python to use the local network
 ```
 python app.py
@@ -93,7 +94,7 @@ applications:
   memory: 64M
 ```
 
-3.4 The web app is configurated. Now, you can lear how to [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).
+3.4 The web app is configurated. Now, you can learn how to [Deploy a web application on Cloud Foundry Service](https://github.com/afforeroc/deploy-on-cloudfoundry).
 
 ## Reference links
 * [Simple Python Flask app on Cloud Foundry](https://gist.github.com/ihuston/e87c1d4719f7e72e9760)
