@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ```
 
 2.3 Run the app locally and later, open your favorite web browser on `localhost:3000`.
-> Remember give access to Python to use the local network
+> Remember give access to Python to use local network
 ```
 python app.py
 ```
