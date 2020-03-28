@@ -3,11 +3,11 @@ This is a tutorial about how to create and configure a simple web app to deploy 
 Additional, it contains a web app sample for study and use.
 
 ## Tutorial
-This tutorial was designed to be done on a personal computer. <br> 
+This tutorial was designed to be done on a personal computer.<br> 
 Most every steps require using of console commands except when is indicated.
 
 ### Required software
-* Command prompt like Terminal, PowerShell, etc.
+* Command prompt like Terminal(Linux) or PowerShell(Windows).
 * Text editor like Notepad++, Visual Studio Code, etc.
 
 ### 1. Install Python and Flask
@@ -37,7 +37,13 @@ Set-ExecutionPolicy Unrestricted
 ```
 
 ### 2. Create and run the app
-2.1 Create a root folder of app named `flask-app\` and go inside.
+2.1 Create an app root folder with name: `flask-app\` and go inside.
+```
+mkdir flask-app
+```
+```
+cd flask-app
+```
 
 2.2 Create `app.py` file and edit it with following template.
 > Text<br> 
@@ -78,7 +84,7 @@ python app.py
 ### 3. Configure the app to deploy
 Go to `flask-app\` folder
 
-3.1 Create `Procfile` file and edit it with following template.
+3.1 Create `Procfile` file (without file extension) and edit it with following template.
 >Text
 ```
 web: python app.py
