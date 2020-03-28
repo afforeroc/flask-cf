@@ -46,7 +46,7 @@ cd flask-app
 ```
 
 2.2 Create `app.py` file and edit it with following template.
-> Text<br> 
+> Text 
 ```
 # import dependencies
 import os
