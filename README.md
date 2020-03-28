@@ -37,7 +37,7 @@ Set-ExecutionPolicy Unrestricted
 ```
 
 ### 2. Create and run the app
-2.1 Create an app root folder with name: `flask-app\` and go inside.
+2.1 Create `flask-app\` folder and go inside it.
 ```
 mkdir flask-app
 ```
